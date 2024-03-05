@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "bin": {
-  "brain-games": "./bin/brain-games.js"
-},
+    "brain-games": "./bin/brain-games.js"
+  },
   "description": "[![Actions Status](https://github.com/3azil/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/3azil/frontend-project-44/actions)",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,8 @@
     "publish": "npm publish --dry-run"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
