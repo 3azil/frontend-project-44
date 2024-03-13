@@ -1,13 +1,11 @@
-import runGame from "../index.js";
+import runGame from '../index.js';
 
-const generateProgression = (start, step, length) => {
-  return Array.from({ length }, (_, i) => start + i * step);
-};
+const generateProgression = (start, step, length) => Array.from({ length }, (_, i) => start + i * step);
 
 const hideElement = (progression, index) => {
   const progressionCopy = [...progression];
-  progressionCopy[index] = "..";
-  return progressionCopy.join(" ");
+  progressionCopy[index] = '..';
+  return progressionCopy.join(' ');
 };
 
 const getGameRound = () => {
@@ -22,5 +20,6 @@ const getGameRound = () => {
   return [question, correctAnswer];
 };
 
-const gameDescription = "What number is missing in the progression?";
-export const progressionGame = () => runGame(gameDescription, getGameRound);
+const gameDescription = 'What number is missing in the progression?';
+const progressionGame = () => runGame(gameDescription, getGameRound);
+export default progressionGame;

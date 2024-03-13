@@ -2,6 +2,15 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
+  "description": "hexlet-brain-games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npm publish --dry-run",
+    "lint": "npx eslint"
+  },
+  "author": "Bazil",
+  "license": "ISC",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
@@ -10,18 +19,9 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
-  "description": "[![Actions Status](https://github.com/3azil/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/3azil/frontend-project-44/actions)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "npm publish --dry-run"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "readline-sync": "^1.4.10"
-  },
-  "devDependencies": {
+    "npm": "^10.5.0",
+    "readline-sync": "^1.4.10",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.29.1"
