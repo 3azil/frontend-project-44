@@ -1,6 +1,6 @@
 import runGame from '../index.js';
 
-const generateProgression = (start, step, length) => Array.from({ length }, (_, i) => start + i * step);
+const genProgression = (start, step, length) => Array.from({ length }, (_, i) => start + i * step);
 
 const hideElement = (progression, index) => {
   const progressionCopy = [...progression];
@@ -13,7 +13,7 @@ const getGameRound = () => {
   const step = Math.floor(Math.random() * 5) + 1;
   const length = Math.floor(Math.random() * 6) + 5;
   const hiddenIndex = Math.floor(Math.random() * length);
-  const progression = generateProgression(start, step, length);
+  const progression = genProgression(start, step, length);
   const correctAnswer = String(progression[hiddenIndex]);
   const question = hideElement(progression, hiddenIndex);
 

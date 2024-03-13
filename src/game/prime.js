@@ -10,7 +10,7 @@ const isPrime = (num) => {
 
 const getGameRound = () => {
   const question = Math.floor(Math.random() * 100) + 1;
-  const correctAnswer = isPrime(question) ? 'yes' : 'no';
+  const correctAnswer = isPrime(question) === true ? 'yes' : 'no';
   return [String(question), correctAnswer];
 };
 
